@@ -1,3 +1,5 @@
+package entities;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,6 +15,9 @@ public class Evento {
     @GeneratedValue
     private long id;
 
+    public Evento(LocalDate now, String s, TipoEvento tipoEvento, int i, Location l1) {
+    }
+
     public class evento {
 
 
@@ -22,7 +27,7 @@ public class Evento {
         private String descrizione;
 
         private TipoEvento tipoEvento;
-        private Integer numeroMassimoPartecipanti;
+        public Integer numeroMassimoPartecipanti;
 
         public enum TipoEvento {
             PUBBLICO, PRIVATO
@@ -89,7 +94,7 @@ public class Evento {
         }
         @Override
         public String toString() {
-            return "Evento{" +
+            return "entities.Evento{" +
                     "id=" + id +
                     ", titolo='" + titolo + '\'' +
                     ", dataEvento=" + dataEvento +
