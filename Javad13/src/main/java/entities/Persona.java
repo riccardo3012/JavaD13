@@ -30,7 +30,7 @@ public class Persona {
         this.listaPartecipanti = listaPartecipanti;
     }
 
-    public Persona(String mario, String rossi, String mail, LocalDate localDate, Gender gender) {
+    public Persona(String name, String surname, String mail, LocalDate localDate, Gender gender) {
     }
 
     public long getId() {

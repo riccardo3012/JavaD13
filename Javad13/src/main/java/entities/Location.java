@@ -15,7 +15,7 @@ public class Location {
     private String nome;
     private String citta;
 
-    public Location(String teatro, String torino) {
+    public Location(String location, String citta) {
     }
 
     public long getId() {
